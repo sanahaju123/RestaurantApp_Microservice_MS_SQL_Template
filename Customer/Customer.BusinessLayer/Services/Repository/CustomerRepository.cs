@@ -19,56 +19,26 @@ namespace Customer.BusinessLayer.Services.Repository
 
         public async Task<IEnumerable<Customers>> FindAllAsync()
         {
-            try
-            {
-                return (IEnumerable<Customers>)await _dbContext.Customers.ToListAsync();
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Customers> FindOneAsync(int id)
         {
-            try
-            {
-                return await _dbContext.Customers.FirstOrDefaultAsync(x => x.Id == id);
-
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Customers> InsertAsync(Customers customer)
         {
-            try
-            {
-                _dbContext.Add(customer);
-                await _dbContext.SaveChangesAsync();
-                return customer;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Customers> UpdateAsync(Customers customer)
         {
-            try
-            {
-                _dbContext.Update(customer);
-                await _dbContext.SaveChangesAsync();
-                return customer;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
     }
 }

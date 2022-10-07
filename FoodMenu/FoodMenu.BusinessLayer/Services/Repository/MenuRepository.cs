@@ -19,54 +19,26 @@ namespace FoodMenu.BusinessLayer.Services.Repository
         
         public async Task<IEnumerable<Menu>> FindAllAsync()
         {
-            try
-            {
-                return await _dbContext.Menus.ToListAsync();
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Menu> FindOneAsync(int id)
         {
-            try
-            {
-                return await _dbContext.Menus.FirstOrDefaultAsync(x => x.FoodId == id);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Menu> InsertAsync(Menu menu)
         {
-            try
-            {
-                _dbContext.Add(menu);
-                await _dbContext.SaveChangesAsync();
-                return menu;
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Menu> UpdateAsync(Menu menu)
         {
-            try
-            {
-                _dbContext.Update(menu);
-                await _dbContext.SaveChangesAsync();
-                return menu;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
     }
 }

@@ -18,54 +18,26 @@ namespace Order.BusinessLayer.Services.Repository
 
         public async Task<IEnumerable<Orders>> FindAllAsync()
         {
-            try
-            {
-                return (IEnumerable<Orders>)await _dbContext.Orders.ToListAsync();
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Orders> FindOneAsync(int id)
         {
-            try
-            {
-                return await _dbContext.Orders.FirstOrDefaultAsync(x => x.OrderId == id);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Orders> InsertAsync(Orders orders)
         {
-            try
-            {
-                _dbContext.Add(orders);
-                await _dbContext.SaveChangesAsync();
-                return orders;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
 
         public async Task<Orders> UpdateAsync(Orders orders)
         {
-            try
-            {
-                _dbContext.Update(orders);
-                await _dbContext.SaveChangesAsync();
-                return orders;
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                return null;
-            }
+            //Write Your Code Here
+            throw new NotImplementedException();
         }
     }
 }
